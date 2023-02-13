@@ -9,10 +9,8 @@ jobs:
       - uses: anishathalye/proof-html@v1.1.0
         with:
           directory: ./
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Sleep for 3 minutes
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '180s'
+      - name: Sleep for 3 minutes
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '180s'
+    
